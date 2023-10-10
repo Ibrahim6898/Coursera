@@ -1,0 +1,17 @@
+.sales-chart {
+  display: flex;
+  align-items: end;
+  height: 300px;
+}
+
+.sales-chart .bar{
+  background-color: rgb(37, 207, 66);
+  margin: 0 10px;
+  flex: 100px 0 0;
+  transition: all;
+  border: solid;
+}
+
+.sales-chart .bar:hover {
+  background-color: #ff851b;
+}
