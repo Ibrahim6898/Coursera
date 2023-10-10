@@ -1,33 +1,53 @@
-.row {
+
+
+.column {
     display: flex;
+    height: 600px;
+    max-width: 300px;
     align-items: stretch;
+    border: 1px solid rgb(0, 0, 0)
 }
 
-.row .label {
-    flex: 0 0 auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.row .container {
+.container {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
 }
 
-.row .dish {
+.bar {
+    border-right: 1px solid blue;
+}
+
+.female { background: #f4ce14;}
+.male {background: #495e57;}
+
+.column {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    height: 400px;
+    max-width: 300px;
+    border: 1px solid rgb(189, 76, 76);
 }
 
-.pasta {
-    background-color: #ee9972;
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
 }
 
-.pizza {
-    background-color: #f4ce14;
+.bar {
+    border-right: 1px solid white;
 }
 
-.buritto {
-    background-color: #495e57;
+.female {
+    background: #f4ce14;
 }
+
+.male {
+    background: #495e57;
+}
+
