@@ -21,3 +21,5 @@ created a simple product card.
 where I wrote some codes demonstrating how charts are created using flexbox.
 
 # CSS-Grid
+
+1- Basic CSS Styles for a Grid Layout: this code snippet can serve as a foundation for styling a grid layout.
