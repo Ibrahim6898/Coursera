@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(25, 122, 104);
+    color: aliceblue;
+}
+nav {
+    background-color: rgb(6, 6, 81);
+    font-size: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    margin: auto;
+    flex-grow: stretch;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    padding: 100px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+}
+/*
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .project-info {
+  opacity: 1;
+}
