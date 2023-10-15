@@ -1,0 +1,54 @@
+/*Element Selectors*/
+header {
+    background-color: #c73e3e;
+    color: #fff;
+    padding: 24px;
+    text-align: center;
+}
+
+/*ID Selectors*/
+
+#main-heading {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+/*Class Selectors*/
+
+a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/*Descendent Selectors*/
+
+#content .post-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/*Combining descendent and class selector*/
+#content .post-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*Hover effect for class selector*/
+.read-more-link:hover {
+    color: #f00;
+    text-decoration: underline;
+}
+
+/*widget style*/
+.widget-title {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*styling for list items in widget*/
+.widget ul {
+    list-style-type: square;
+}
