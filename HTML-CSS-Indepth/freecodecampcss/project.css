@@ -1,4 +1,16 @@
-p {
-    font-size: 64px;
-    color: purple;
+/*Element Selector*/
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+
+/*ID Selector*/
+#unique-paragraph {
+    color: red;
+    font-weight: bold;
+}
+
+/*Class Selector*/
+.highlight {
+    background-color: yellow;
 }
