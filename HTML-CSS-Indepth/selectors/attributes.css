@@ -1,0 +1,30 @@
+    /* Existence Attribute Selector */
+    [data-attribute] {
+        background-color: #ffd700; /* Yellow */
+      }
+  
+      /* Equality Attribute Selector */
+      [data-type="number"] {
+        background-color: #00ced1; /* Dark Turquoise */
+      }
+  
+      /* Substring Matching Attribute Selectors */
+      [data-text^="Prefix"] {
+        color: #ff6347; /* Tomato */
+      }
+      [data-text$="Suffix"] {
+        color: #8a2be2; /* Blue Violet */
+      }
+      [data-text*="Contains"] {
+        text-decoration: underline;
+      }
+  
+      /* Prefix Attribute Selector */
+      [data-lang|="en"] {
+        font-weight: bold;
+      }
+  
+      /* Attribute Selector with Multiple Values */
+      [data-roles~="admin"] {
+        border: 2px solid #228b22; /* Forest Green */
+      }
