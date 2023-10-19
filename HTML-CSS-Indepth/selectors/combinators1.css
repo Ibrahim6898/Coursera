@@ -1,0 +1,50 @@
+        /* User Action States */
+        a:hover {
+            color: red;
+        }
+        a:active {
+            background-color: yellow;
+        }
+        input:focus {
+            border: 2px solid blue;
+        }
+
+        /* Structural and Positional States */
+        ul > li:first-child {
+            font-weight: bold;
+        }
+        ul > li:last-child {
+            font-style: italic;
+        }
+        li:nth-child(odd) {
+            color: green;
+        }
+        p:nth-of-type(2n) {
+            background-color: lightgray;
+        }
+        div:not(.special) {
+            border: 2px dashed gray;
+        }
+        p:empty {
+            display: none;
+        }
+
+        /* Form Element States */
+        input:enabled {
+            background-color: white;
+        }
+        input:disabled {
+            background-color: lightgray;
+        }
+        input:checked {
+            border: 2px solid green;
+        }
+        input:indeterminate {
+            border: 2px solid orange;
+        }
+        input:valid {
+            border: 2px solid green;
+        }
+        input:invalid {
+            border: 2px solid red;
+        }
