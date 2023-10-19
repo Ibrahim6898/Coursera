@@ -1,0 +1,28 @@
+    /* Descendant Combinator 
+    The div p selector uses the descendant
+    combinator to style the paragraph inside a div.*/
+    div p {
+      color: blue;
+    }
+
+    /* Child Combinator 
+    The ul > li selector uses the child combinator 
+    to style the list item directly inside the ul.*/
+    ul > li {
+      font-weight: bold;
+    }
+
+    /* Adjacent Sibling Combinator 
+    The h2 + p selector uses the adjacent sibling 
+    combinator to style the paragraph immediately following an h2.*/
+    h2 + p {
+      font-style: italic;
+    }
+
+    /* General Sibling Combinator 
+    The h2 ~ p selector uses the general sibling 
+    combinator to style all paragraphs that follow 
+    an h2 within the same parent.*/
+    h2 ~ p {
+      text-decoration: underline;
+    }
