@@ -1,0 +1,25 @@
+/* whitespace */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Overflow */
+.overflow-container {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+/* Wordwrap */
+.wordwrap {
+    .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* Vertical text */
+.vertical-text {
+    writing-mode: vertical-lr;
+}
