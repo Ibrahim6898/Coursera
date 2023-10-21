@@ -1,0 +1,66 @@
+    /* Define individual keyframes animations for each box */
+    @keyframes slide-in-1 {
+      0% { transform: translateX(-100%); } /* Start: Translate from left */
+      100% { transform: translateX(0); }   /* End: Translate to original position */
+    }
+    @keyframes slide-in-2 {
+      0% { transform: translateY(-100%); } /* Start: Translate from top */
+      100% { transform: translateY(0); }   /* End: Translate to original position */
+    }
+    @keyframes slide-in-3 {
+      0% { transform: scale(0); }         /* Start: Scale from zero size */
+      100% { transform: scale(1); }       /* End: Scale to full size */
+    }
+    @keyframes slide-in-4 {
+      0% { opacity: 0; }                 /* Start: Fully transparent */
+      100% { opacity: 1; }               /* End: Fully opaque */
+    }
+
+    /* Apply animation properties individually to each box */
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      background-color: #3498db;
+      display: inline-block;
+    }
+
+    .box:nth-child(1) {
+      animation-name: slide-in-1;       /* Apply slide-in-1 animation */
+      animation-duration: 2s;          /* Animation duration: 2 seconds */
+      animation-delay: 1s;             /* Delay animation start by 1 second */
+      animation-iteration-count: infinite; /* Repeat animation infinitely */
+      animation-direction: alternate;  /* Reverse direction after each iteration */
+      animation-timing-function: ease-in-out; /* Animation timing function */
+      animation-fill-mode: both;       /* Apply animation styles before and after */
+    }
+
+    .box:nth-child(2) {
+      animation-name: slide-in-2;       /* Apply slide-in-2 animation */
+      animation-duration: 3s;          /* Animation duration: 3 seconds */
+      animation-delay: 2s;             /* Delay animation start by 2 seconds */
+      animation-iteration-count: 5;    /* Repeat animation 5 times */
+      animation-direction: normal;      /* Animation direction: normal */
+      animation-timing-function: ease-in; /* Animation timing function */
+      animation-fill-mode: forwards;   /* Apply animation styles after animation ends */
+    }
+
+    .box:nth-child(3) {
+      animation-name: slide-in-3;       /* Apply slide-in-3 animation */
+      animation-duration: 1.5s;        /* Animation duration: 1.5 seconds */
+      animation-delay: 0.5s;           /* Delay animation start by 0.5 seconds */
+      animation-iteration-count: 2;    /* Repeat animation 2 times */
+      animation-direction: alternate-reverse; /* Reverse direction after each iteration */
+      animation-timing-function: linear; /* Animation timing function */
+      animation-fill-mode: backwards;  /* Apply animation styles before animation starts */
+    }
+
+    .box:nth-child(4) {
+      animation-name: slide-in-4;       /* Apply slide-in-4 animation */
+      animation-duration: 2s;          /* Animation duration: 2 seconds */
+      animation-delay: 0s;             /* No delay for animation start */
+      animation-iteration-count: 1;    /* Play animation once */
+      animation-direction: normal;      /* Animation direction: normal */
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); /* Custom timing function */
+      animation-fill-mode: none;       /* Do not apply any styles before or after animation */
+    }
